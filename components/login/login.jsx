@@ -18,7 +18,7 @@ const Login = () => {
       console.log(val);
     };
     getData();
-  }, []);
+  }, [val]);
 
   const LoginUser = (e) => {
     e.preventDefault();
