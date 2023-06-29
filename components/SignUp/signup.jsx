@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "@/components/firebase/FierbaseConfig";
+import { useRouter } from "next/navigation";
 const Signup = () => {
   const [userData, setUserdata] = useState({
     firstname: "",
@@ -13,6 +14,7 @@ const Signup = () => {
     password: "",
     confirmpassword: "",
   });
+  const router = useRouter();
   const handlesubmit = async (e) => {
     try {
       e.preventDefault();
@@ -25,6 +27,17 @@ const Signup = () => {
         country: userData.country,
         password: userData.password,
         confirmpassword: userData.confirmpassword,
+      });
+      await router.push("/login");
+      await setUserdata({
+        firstname: "",
+        lastname: "",
+        username: "",
+        phonenumber: "",
+        email: "",
+        country: "",
+        password: "",
+        confirmpassword: "",
       });
     } catch (error) {
       console.error("error adding documents: ", e);
