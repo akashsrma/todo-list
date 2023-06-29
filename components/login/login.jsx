@@ -36,14 +36,14 @@ const Login = () => {
   return (
     <form className="text-center mt-32" onSubmit={LoginUser}>
       <p className="font-semibold text-gray-600">LOGIN</p>
-      <hr className="w-[5rem] ml-[12rem] border-2 "></hr>
+      <hr className="w-[5rem] ml-[10.6rem] border-2 "></hr>
 
       <div className="flex  items-center justify-center mt-6 ">
         <input
           type="email"
           name="email-address"
           placeholder="Email-Address"
-          className="border-2 h-[2rem] w-[29rem] rounded-sm"
+          className="border-2 h-[2rem] w-[26rem] rounded-sm"
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -57,7 +57,7 @@ const Login = () => {
           type="password"
           name="password"
           placeholder="password"
-          className="border-2 h-[2rem] w-[29rem] rounded-sm"
+          className="border-2 h-[2rem] w-[26rem] rounded-sm"
           value={password}
           onChange={(e) => {
             setPassword(e.target.value);
@@ -69,7 +69,7 @@ const Login = () => {
         <div className="flex  items-center justify-center mt-6">
           <button
             type="submit"
-            className="bg-gray-500 border-2 h-[2rem] w-[29rem] rounded-md text-white hover:bg-gray-700 "
+            className="bg-gray-500 border-2 h-[2rem] w-[26rem] rounded-md text-white hover:bg-gray-700 "
           >
             Submit
           </button>
