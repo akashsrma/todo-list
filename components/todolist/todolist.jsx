@@ -25,7 +25,7 @@ const Todolist = () => {
       setVal(dbval.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getData();
-  }, []);
+  }, [val]);
   const handleCreate = async () => {
     await addDoc(value, { fname: firstname, lname: lastname });
   };
