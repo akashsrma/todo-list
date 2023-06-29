@@ -15,7 +15,7 @@ const Login = () => {
     const getData = async () => {
       const dbVal = await getDocs(value);
       setVal(dbVal.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      console.log(val);
+      // console.log(val);
     };
     getData();
   }, [val]);
@@ -26,10 +26,10 @@ const Login = () => {
     val.forEach((value) => {
       if (value.email === email && value.password === password) {
         router.push("/Dashbarnav");
-        console.log(value.email);
+        // console.log(value.email);
       } else {
         router.push("/login");
-        console.log("signed in failed");
+        // console.log("signed in failed");
       }
     });
   };
