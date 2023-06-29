@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCdZ9GqSTxai48YuUIHPjyI3mWLojcmMGI",
-  authDomain: "wweraw-af753.firebaseapp.com",
-  projectId: "wweraw-af753",
-  storageBucket: "wweraw-af753.appspot.com",
-  messagingSenderId: "500399006369",
-  appId: "1:500399006369:web:2a59d4c4639135c22c46e0",
+  apiKey: "AIzaSyB2x6VxwfaXV5xylJTLALsFZq-uClvfi78",
+  authDomain: "shop-5816e.firebaseapp.com",
+  projectId: "shop-5816e",
+  storageBucket: "shop-5816e.appspot.com",
+  messagingSenderId: "646644228300",
+  appId: "1:646644228300:web:9b31b9c126b6251b152269",
 };
 
 // Initialize Firebase
